@@ -64,7 +64,7 @@ module.exports = {
 `context`spécifie le chemin de base des fichiers.
 `entry`est utilisé pour spécifier des bundles.
 ### Loaders
-webpack charge tout comme un module. Utilisez des loaders pour charger dans CSS et d'autres fichiers d'actifs. Installez le `style-loader`, `css-loaderet` `url-loader`.
+webpack charge tout comme un module. Utilisez des loaders pour charger dans CSS et d'autres fichiers d'actifs. Installez le `style-loader`, `css-loader`et `url-loader`.
 
 `npm install --save-dev style-loader css-loader url-loader`
 
