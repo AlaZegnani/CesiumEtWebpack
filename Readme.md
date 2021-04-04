@@ -4,14 +4,14 @@ leurs actifs de manière intuitive et de charger différents types de fichiers s
 
 Dans une première partie, on va créer une application Web simple à partir de zéro à l'aide de webpack, puis couvrir les étapes pour intégrer le module Cesium npm .
 
-##Créer une application Webpack de base
+## Créer une application Webpack de base
 
 Créez un nouveau `cesium-webpack` répertoire pour votre application. Ouvrez une console, accédez au nouveau répertoire et exécutez la commande suivante :
 ```
 npm init
 ```
 Suivez les invites et indiquez les détails de votre application. Appuyez sur `Entrée`pour utiliser les valeurs par défaut. Cela créera package.json.
-##Créez le code de l'application
+## Créez le code de l'application
 Créez un ```src``` répertoire pour le code de notre application. Lorsque nous construisons l'application, webpack produira des fichiers de distribution dans un ```dist``` répertoire.
 
 Créez src/index.htmlet ajoutez du code pour une page HTML standard.
@@ -36,12 +36,12 @@ Créez ```src/index.js``` et ajoutez ce code de texte.
 ```javascript
 console.log('Hello World!');
 ```
-##Installer et configurer Webpack
+## Installer et configurer Webpack
 Commencez par installer webpack en mode developpement (```--save-dev```).
 ```
 npm install --save-dev webpack
 ```
-###Configuration
+### Configuration
 Créez ```webpack.config.js```pour définir notre objet de configuration Webpack.
 
 ```javascript
@@ -63,7 +63,7 @@ module.exports = {
 
 `context`spécifie le chemin de base des fichiers.
 `entry`est utilisé pour spécifier des bundles.
-###Loaders
+### Loaders
 webpack charge tout comme un module. Utilisez des loaders pour charger dans CSS et d'autres fichiers d'actifs. Installez le `style-loader`, `css-loaderet` `url-loader`.
 
 `npm install --save-dev style-loader css-loader url-loader`
@@ -97,7 +97,7 @@ module.exports = {
     }
 };
 ```
-###Plugins
+### Plugins
 Pour définir `index.html` et injectez notre bundle dans cette page on utilise un plugin webpack appelé html-webpack-plugin.
 ```
 npm install --save-dev html-webpack-plugin
@@ -134,7 +134,7 @@ module.exports = {
     ]
 };
 ```
-###Regroupez l'application & Exécutez le serveur de développement
+### Regroupez l'application & Exécutez le serveur de développement
 
 Utilisez le `webpack-dev-server` pour servir une version de développement et voir notre application en action.
 ```
@@ -163,13 +163,13 @@ npm start
 Accepter l'installation de 'webpack-cli' si le vous êtes demandé.
 
 Vous devriez voir votre contenu diffusé sur localhost:8080, et vous devriez voir le message "Hello World!" message lorsque vous ouvrez la console du navigateur.
-##Ajouter CesiumJS à une application Webpack
-###Installez CesiumJS
+## Ajouter CesiumJS à une application Webpack
+### Installez CesiumJS
 Installez le `cesium`module à partir de npm pour l'ajouter à `package.json`.
 ```
 npm install --save-dev cesium
 ```
-###Configurer CesiumJS dans le webpack
+### Configurer CesiumJS dans le webpack
 Ajoutez ce qui suit en haut de `webpack.config.js`:
 ```js
 // The path to the CesiumJS source code
@@ -200,7 +200,7 @@ output: {
     },
 ```
 
-###Gérer les fichiers statiques CesiumJS
+### Gérer les fichiers statiques CesiumJS
 
 Enfin, assurez-vous que les fichiers d'actif, de widget et de travail Web CesiumJS statiques sont servis et chargés correctement.
 
@@ -234,7 +234,7 @@ Ajoutez ce qui suit au `plugins`tableau et définissez une variable d'environnem
     ],
 ```
 Cela permet la copie de `Assets`et `Widgets`répertoires, et les scripts construits (built scripts).
-##Hello Cesium!
+## Hello Cesium!
 Créez un nouveau fichier `src/css/main.css`, pour styliser notre application:
 ```css
 html, body, #cesiumContainer {
