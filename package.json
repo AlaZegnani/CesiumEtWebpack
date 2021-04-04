@@ -1,0 +1,11 @@
+{
+  "name": "cesium-et-webpack",
+  "version": "1.0.0",
+  "description": "un modèle créer avec webpack où on peut developer des application avec cesiumjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
