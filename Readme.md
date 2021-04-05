@@ -31,7 +31,7 @@ Créez src/index.htmlet ajoutez du code pour une page HTML standard.
 </html>
 ```
 
-Créez ```src/index.js``` et ajoutez ce code de texte.
+Créez ```src/index.js``` et ajoutez ce texte de code.
 
 ```javascript
 console.log('Hello World!');
