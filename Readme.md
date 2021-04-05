@@ -202,7 +202,7 @@ output: {
 
 ### Gérer les fichiers statiques CesiumJS
 
-Enfin, assurez-vous que les fichiers d'actif, de widget et de travail Web CesiumJS statiques sont servis et chargés correctement.
+Enfin, assurez-vous que les fichiers d'assets, de widget et de travail Web CesiumJS statiques sont servis et chargés correctement.
 
 Utilisez le ``copy-webpack-plugin``pour copier des fichiers statiques dans le `dist`répertoire dans le cadre du processus de génération.
 ```
